@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SignUp">
+
+    <View   android:id="@+id/_bg__login_page_ek2"
+        android:background="@drawable/_bg__login_page_ek2_shape"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        />
+
+    <ImageView android:id="@+id/burung_zix"
+        android:src="@drawable/burung_zix"
+        android:contentDescription="burung_zix"
+        android:layout_width="430dp"
+        android:layout_height="359dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        />
+
+    <TextView android:id="@+id/inisignup"
+        android:textSize="15sp"
+        android:textColor="@color/merah1"
+        android:layout_width="190dp"
+        android:layout_height="22.5dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="20dp"
+        android:text="@string/sudah_punya_akun__login_string"
+        android:layout_marginBottom="10dp"
+        app:layout_constraintTop_toBottomOf="@id/_bg___frame_1_ek1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        />
+
+    <TextView android:id="@+id/login"
+        android:textStyle="bold"
+        android:textSize="24sp"
+        android:textColor="@color/merah1"
+        android:layout_width="120dp"
+        android:layout_height="36.4dp"
+        android:layout_marginTop="-100dp"
+        android:text="@string/sign_up_ek1_string"
+        app:layout_constraintTop_toBottomOf="@id/burung_zix"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        />
+
+    <EditText
+        android:id="@+id/rectangle_1"
+        android:background="@drawable/rectangle_2_shape"
+        android:layout_width="255dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="50dp"
+        app:layout_constraintTop_toBottomOf="@id/login"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <EditText   android:id="@+id/kotakemail"
+        android:background="@drawable/rectangle_2_shape"
+        android:layout_width="255dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="50dp"
+        app:layout_constraintTop_toBottomOf="@id/rectangle_1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <TextView android:id="@+id/email"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:textColor="@color/merah2"
+        android:layout_width="116.6dp"
+        android:layout_height="23.6dp"
+        android:text="@string/email___string"
+        app:layout_constraintBottom_toTopOf="@id/kotakemail"
+        app:layout_constraintStart_toStartOf="@id/kotakemail"/>
+
+    />
+
+    <EditText
+        android:id="@+id/rectangle_2"
+        android:background="@drawable/rectangle_2_shape"
+        android:layout_marginTop="50dp"
+        android:layout_width="255dp"
+        android:layout_height="46dp"
+        app:layout_constraintTop_toBottomOf="@id/kotakemail"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <EditText   android:id="@+id/kotakrepas"
+        android:background="@drawable/rectangle_2_shape"
+        android:layout_marginTop="50dp"
+        android:layout_width="255dp"
+        android:layout_height="46dp"
+        app:layout_constraintTop_toBottomOf="@id/rectangle_2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <TextView android:id="@+id/repas"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        android:textColor="@color/merah2"
+        android:layout_width="116.6dp"
+        android:layout_height="23.6dp"
+        android:text="@string/password___string"
+        app:layout_constraintBottom_toTopOf="@id/kotakrepas"
+        app:layout_constraintStart_toStartOf="@id/kotakrepas"/>
+
+    />
+    <TextView android:id="@+id/username__"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        android:textColor="@color/merah2"
+        android:layout_width="114.6dp"
+        android:layout_height="23.6dp"
+        android:text="@string/username___string"
+        app:layout_constraintBottom_toTopOf="@id/rectangle_1"
+        app:layout_constraintStart_toStartOf="@id/rectangle_1"/>
+
+    <TextView android:id="@+id/password__"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        android:textColor="@color/merah2"
+        android:layout_width="116.6dp"
+        android:layout_height="23.6dp"
+        android:text="@string/password___string"
+        app:layout_constraintBottom_toTopOf="@id/rectangle_2"
+        app:layout_constraintStart_toStartOf="@id/rectangle_2"/>
+
+    />
+
+    <View
+        android:id="@+id/_bg___frame_1_ek1"
+        android:layout_width="145dp"
+        android:layout_height="51dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="50dp"
+        android:background="@drawable/_bg___frame_1_ek1_shape"
+        app:layout_constraintTop_toBottomOf="@id/kotakrepas"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        />
+
+    <TextView android:id="@+id/signup"
+        android:textStyle="bold"
+        android:textSize="24sp"
+        android:textColor="@color/black"
+        android:layout_width="60dp"
+        android:layout_height="36.4dp"
+        android:text="@string/sign_up_ek1_string"
+        app:layout_constraintBottom_toBottomOf="@id/_bg___frame_1_ek1"
+        app:layout_constraintStart_toStartOf="@id/_bg___frame_1_ek1"
+        app:layout_constraintTop_toTopOf="@id/_bg___frame_1_ek1"
+        app:layout_constraintEnd_toEndOf="@id/_bg___frame_1_ek1"
+
+
+        />
+</androidx.constraintlayout.widget.ConstraintLayout>
